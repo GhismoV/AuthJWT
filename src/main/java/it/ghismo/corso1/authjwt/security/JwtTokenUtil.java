@@ -62,9 +62,9 @@ public class JwtTokenUtil implements Serializable {
 		final Date expiration = getExpirationDateFromToken(token);
 		boolean retVal = expiration != null && expiration.before(clock.now());
 		if (retVal) {
-			log.info("Token Ancora Valido!");
-		} else {
 			log.warn("Token Scaduto o non Valido!");
+		} else {
+			log.info("Token Ancora Valido!");
 		}
 		return retVal;
 	}
