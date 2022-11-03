@@ -31,7 +31,7 @@ sicurezza:
   refresh: /refresh
   header: Authorization
   prefix: Bearer 
-  expiration: 300
+  expiration: 600
   secret: Ghismo1979@DrizztDoUrden
 
 # ==============================================================
